@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوازم یدکی نقشینه | اهواز</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;400;700&display=swap');
+        body { font-family: 'Vazirmatn', sans-serif; background-color: #f8fafc; scroll-behavior: smooth; }
+        .hero-section { 
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+            url('https://images.unsplash.com/photo-1592838064575-70ed626d3a44?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover; background-position: center;
+        }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body>
+
+    <header class="bg-slate-900 text-white p-4 sticky top-0 z-50 shadow-2xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-truck-moving text-yellow-500 text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold tracking-tight">لوازم یدکی <span class="text-yellow-500">نقشینه</span></h1>
+            </div>
+            <div id="current-date" class="hidden md:block text-xs bg-slate-800 px-4 py-2 rounded-full border border-slate-700"></div>
+        </div>
+    </header>
+
+    <section class="hero-section h-[450px] flex flex-col items-center justify-center text-white text-center px-4">
+        <div class="animate-bounce mb-6">
+            <i class="fas fa-tools text-5xl text-yellow-500"></i>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-black mb-4">بزرگترین مرکز قطعات اتوبوس و کامیون</h2>
+        <p class="text-lg text-slate-300 max-w-2xl">تامین قطعات کمیاب و اصلی در قلب خوزستان. مستقیم از واردکننده بخرید.</p>
+        <div class="mt-8 flex gap-4">
+            <a href="tel:09166181829" class="bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-xl transition duration-300 shadow-lg flex items-center gap-2">
+                <i class="fas fa-phone"></i> تماس فوری
+            </a>
+            <a href="#products" class="bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-8 rounded-xl transition backdrop-blur-md">لیست قیمت</a>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-4 -mt-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="glass-card p-6 rounded-2xl shadow-xl border border-white flex items-center gap-4">
+                <div class="bg-blue-100 p-4 rounded-full text-blue-600"><i class="fas fa-map-marked-alt text-2xl"></i></div>
+                <div>
+                    <h5 class="font-bold text-slate-800">آدرس ما</h5>
+                    <p class="text-xs text-slate-500">اهواز، سه راه خرمشهر، میدان انقلاب</p>
+                </div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl shadow-xl border border-white flex items-center gap-4">
+                <div class="bg-green-100 p-4 rounded-full text-green-600"><i class="fab fa-whatsapp text-2xl"></i></div>
+                <div>
+                    <h5 class="font-bold text-slate-800">مشاوره در واتس‌اپ</h5>
+                    <p class="text-xs text-slate-500">ارسال عکس قطعه به ۰۹۱۶۶۱۸۱۸۲۹</p>
+                </div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl shadow-xl border border-white flex items-center gap-4">
+                <div class="bg-yellow-100 p-4 rounded-full text-yellow-600"><i class="fas fa-shipping-fast text-2xl"></i></div>
+                <div>
+                    <h5 class="font-bold text-slate-800">ارسال سریع</h5>
+                    <p class="text-xs text-slate-500">ارسال به تمام نقاط کشور در کمترین زمان</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="products" class="container mx-auto px-4 py-20">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <span class="text-yellow-600 font-bold text-sm tracking-widest uppercase">Special Offers</span>
+                <h3 class="text-3xl font-black text-slate-800">قطعات موجود در انبار</h3>
+            </div>
+            <a href="https://wa.me/989166181829" class="text-blue-600 font-bold flex items-center gap-1 hover:underline">مشاهده همه <i class="fas fa-arrow-left text-sm"></i></a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 group border border-slate-100">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1635437536607-b8572f443763?auto=format&fit=crop&w=500&q=80" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">ویژه</div>
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">توربوشارژ اصلی اسکانیا</h4>
+                    <div class="flex items-center gap-2 text-slate-400 text-sm mb-4">
+                        <i class="fas fa-check-circle text-green-500"></i> تعداد موجود در انبار: ۵ عدد
+                    </div>
+                    <div class="flex justify-between items-center pt-4 border-t border-slate-50">
+                        <span class="text-2xl font-black text-slate-900">استعلام قیمت</span>
+                        <a href="https://wa.me/989166181829" class="bg-slate-900 text-white p-3 rounded-xl hover:bg-green-600 transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 text-center">
+            <h4 class="text-3xl font-bold mb-8 italic">نقشینه، نامی مطمئن در جاده‌ها</h4>
+            <div class="flex flex-wrap justify-center gap-8 mb-12">
+                <a href="tel:09166181829" class="flex flex-col items-center group">
+                    <div class="w-14 h-14 bg-slate-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-yellow-500 transition"><i class="fas fa-phone-alt"></i></div>
+                    <span class="text-sm">۰۹۱۶۶۱۸۱۸۲۹</span>
+                </a>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 bg-slate-800 rounded-full flex items-center justify-center mb-2"><i class="fas fa-map-marker-alt text-red-400"></i></div>
+                    <span class="text-sm max-w-[200px]">اهواز، سه راه خرمشهر، میدان انقلاب</span>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-slate-500 text-xs">
+                © تمام حقوق برای لوازم یدکی نقشینه محفوظ است | ۱۴۰۴
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const today = new Date().toLocaleDateString('fa-IR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById('current-date').innerHTML = '<i class="far fa-calendar-alt ml-2 text-yellow-500"></i> امروز: ' + today;
+    </script>
+</body>
+</html>
